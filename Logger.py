@@ -59,7 +59,7 @@ logconfig = {
     'handlers': {
         'console': {
             'class': 'logging.StreamHandler',
-            'level': 'INFO',
+            'level': 'DEBUG',
             'formatter': 'simple'
         },
         'file': {

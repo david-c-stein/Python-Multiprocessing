@@ -6,13 +6,15 @@ try:
         import multiprocessing
 except:
     __MULTIPROCESSING__ = False
-    import Logger
     pass
 
 import sys
 import threading
 import time
-
+import logging
+import logging.config
+import logging.handlers
+import Logger
 
 class Two(multiprocessing.Process if __MULTIPROCESSING__ else threading.Thread):
 
